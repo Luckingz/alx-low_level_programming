@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-/* Programme that prints an output */
+/*
+ *  A programme to print an output using puts
+ *  */
 
-int main(void) {
-	puts("Programming is like building a multilingual puzzle\n")
-	return 0;
+int main(void) 
+{
+	puts("Programming is like building a multilingual puzzle");
+	return (0);
 }
