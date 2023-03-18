@@ -2,7 +2,7 @@
 
 /**
  * main - Programme to print the Alphabets a to z
- * Function: The function ends the programme
+ * Return: The function ends the programme
  */
 
 int main(void)
