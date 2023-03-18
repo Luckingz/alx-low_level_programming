@@ -2,7 +2,7 @@
 
 /**
  * main - Programme to print the Alphabets a to z
- * Function: 0 ends the programme
+ * Function: The function ends the programme
  */
 
 int main(void)
@@ -12,8 +12,8 @@ int main(void)
 	while (ch <= 'z')
 	{
 		putchar(ch);
-		putchar('\n');
 		ch++;
 	}
+	putchar("\n");
 	return (0);
 }
