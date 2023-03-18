@@ -14,6 +14,7 @@ int main(void)
 	while (ch < 10)
 	{
 		putchar(ch + '0');
+		ch++;
 	}
 	putchar('\n');
 	return (0);
