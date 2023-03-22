@@ -4,7 +4,7 @@
  * main - A programme to print alphabet
  * Return: 0 on success
  */
-print_alphabet()
+void print_alphabet()
 {
 	char ch = 'a';
 
