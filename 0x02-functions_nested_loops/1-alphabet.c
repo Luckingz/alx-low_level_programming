@@ -11,7 +11,7 @@ int main(void)
 	return (0);
 }
 
-void print_alphabet(void)
+int print_alphabet()
 {
         char ch = 'a';
 
@@ -21,4 +21,5 @@ void print_alphabet(void)
                 ch++;
         }
         _putchar('\n');
+	return (0);
 }
