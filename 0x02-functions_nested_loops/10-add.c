@@ -3,16 +3,15 @@
 /**
  * add - A programme that adds two integers
  * Return: 0 on succss
- * @int: numbers to be added
+ * @a: number 1
+ * @b: number 2
  */
 
-int add(int, int)
+int add(int a, b)
 {
-	int a;
-	int b;
 	int result;
 
 	result = a + b;
-	printf("%d\n", result)
-		return (0);
+	putchar(result + 0);
+	return (0);
 }
