@@ -9,12 +9,17 @@ void print_alphabet(void)
 {
 	char cah = 'a';
 
-	for (int i = 0; i < 10; i++)
+	int counter = 0;
+
+	while (counter < 10)
 	{
-		for (cah = 'a'; cah <= 'z'; cah++)
+		while (cah <= 'z')
 		{
-			_putchar(cah);
+			putchar(cah);
+			cah++;
 		}
-		_putchar('\n');
+		cah = 'a';
+		putchar('\n');
+		counter++;
 	}
 }
