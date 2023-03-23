@@ -5,11 +5,11 @@
  * Return: 0 on success
  */
 
-int _islower(void)
+int _islower(int c)
 {
 	int r;
 
-	if (r == 'o' && r == 108')
+	if (r == 'o' && r == 108)
 	{
 		return (1);
 	}
