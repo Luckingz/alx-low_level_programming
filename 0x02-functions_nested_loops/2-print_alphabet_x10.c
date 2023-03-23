@@ -15,11 +15,11 @@ void print_alphabet(void)
 	{
 		while (cah <= 'z')
 		{
-			putchar(cah);
+			_putchar(cah);
 			cah++;
 		}
 		cah = 'a';
-		putchar('\n');
+		_putchar('\n');
 		counter++;
 	}
 }
