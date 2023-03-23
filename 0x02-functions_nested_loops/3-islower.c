@@ -3,7 +3,7 @@
 /**
  * _islower - A programme that that checks for lower case
  * Return: 0 on success
- * c: int variable
+ * @c: int variable
  */
 
 int _islower(int c)
