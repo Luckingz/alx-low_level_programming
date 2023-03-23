@@ -7,7 +7,7 @@
  * @b: number 2
  */
 
-int add(int a, b)
+int add(int a, int b)
 {
 	int result;
 
