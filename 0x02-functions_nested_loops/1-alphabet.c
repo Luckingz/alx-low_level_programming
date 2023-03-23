@@ -5,12 +5,6 @@
  * Return: 0 on success
  */
 
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
 void print_alphabet(void)
 {
         char cha = 'a';
