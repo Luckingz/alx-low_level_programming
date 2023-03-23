@@ -1,11 +1,12 @@
 #include "main.h"
 
-/*
- * print_alphabet - A programme that prints the alphabet a - z in lower case
+/**
+ * print_alphabet_x10 - A programme that prints the alphabet
+ * a - z in lower case
  * Return: 0 on success
  */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char cah = 'a';
 
