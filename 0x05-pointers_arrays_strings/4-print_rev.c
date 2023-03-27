@@ -6,7 +6,7 @@
  * Return: 0 always
  */
 
-void _puts(char *str)
+void print_rev(char *str)
 {
 	int i = 0;
 
