@@ -6,6 +6,8 @@
  * Return: 0 always
  */
 
+int _strlen(char *s);
+
 void print_rev(char *s)
 {
 	int len = _strlen(s);
@@ -18,3 +20,14 @@ void print_rev(char *s)
 	}
 	_putchar('\n');
 }
+
+int _strlen(char *s)
+{
+        int len = 0;
+
+        while (*s != '\0')
+        {
+                len++;
+                s++;
+        }
+        return (len);                                                                    }
