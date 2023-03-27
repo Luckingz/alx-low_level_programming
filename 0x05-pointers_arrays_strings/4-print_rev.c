@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * _puts - Function to print a string
+ * print_rev - Function to print in reverse
  * @str: Variable
  * Return: 0 always
  */
 
 void print_rev(char *str)
 {
-	int i = 0;
+	int len = _strlen(str);
+	int i = len - 1;
 
-	while (str[i] != '\0')
+	while (i >= 0)
 	{
 		_putchar(str[i]);
 		i--;
