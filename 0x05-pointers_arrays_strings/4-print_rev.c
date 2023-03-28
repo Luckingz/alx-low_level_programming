@@ -21,13 +21,20 @@ void print_rev(char *s)
 	_putchar('\n');
 }
 
+/**
+ * _strlen - Function to print lenght of a String
+ * @s: s is a variable
+ * Return: lenght
+ */
+
 int _strlen(char *s)
 {
-        int len = 0;
+	int len = 0;
 
-        while (*s != '\0')
-        {
-                len++;
-                s++;
-        }
-        return (len);                                                                    }
+	while (*s != '\0')
+	{
+		len++;
+		s++;
+	}
+	return (len);
+}
