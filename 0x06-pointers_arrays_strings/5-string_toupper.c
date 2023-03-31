@@ -2,19 +2,19 @@
 
 /**
  * string_toupper - Function to change lower case to uppercase
- * @*'': Variable
+ * @str: Variable
  * Return: 0 always
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 	int i = 0;
 
-	while (*[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if (*[i] >= 'a' && *[i] <= 'z')
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			*[i] = *[i] - ('a' - 'A');
+			str[i] = str[i] - ('a' - 'A');
 		}
 		i++;
 	}
