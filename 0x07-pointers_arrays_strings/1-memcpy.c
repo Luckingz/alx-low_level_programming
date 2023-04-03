@@ -5,6 +5,7 @@
  * @dest: Destination variable
  * @src: Source variable
  * @n: Counter variable
+ * Return: Dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -13,7 +14,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (i < n)
 	{
-		*dest[i] = *src[i];
+		dest[i] = src[i];
 		i++;
 	}
 	return (dest);
