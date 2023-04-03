@@ -9,10 +9,10 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	while (*s != '\0')
+	while (*haystack != '\0')
 	{
-		char *result = accept;
-		char *jet = s;
+		char *result = needle;
+		char *jet = haystack;
 
 		while (*result != '\0' && *result == *jet)
 		{
@@ -21,9 +21,9 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (*result == '\0')
 		{
-			return (s);
+			return (haystack);
 		}
-		s++;
+		haystack++;
 	}
 	return ('\0');
 }
