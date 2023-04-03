@@ -11,7 +11,7 @@ void print_chessboard(char (*a)[8])
 	int n = 0;
 	int m = 0;
 
-	while (a != '\0')
+	while (a != 0)
 	{
 		for (n = 0; n < 8; n++)
 		{
@@ -19,9 +19,8 @@ void print_chessboard(char (*a)[8])
 			{
 				_putchar(a[n][m]);
 			}
-			_putchar("\n");
+			_putchar('\n');
 		}
 		break;
 	}
-	return ('\0);
 }
