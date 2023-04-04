@@ -25,6 +25,5 @@ void print_diagsums(int *a, int size)
 		result2 += a[index];
 	}
 
-	printf("%d", result1);
-	printf("%d\n", result2);
+	printf("%d, %d\n", result1, result2);
 }
