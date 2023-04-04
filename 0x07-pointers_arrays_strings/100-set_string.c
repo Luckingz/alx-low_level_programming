@@ -10,5 +10,5 @@
 void set_string(char **s, char *to)
 {
 	*s = to;
-	return ('0/');
+	return ('0\');
 }
