@@ -13,10 +13,14 @@ void print_diagsums(int *a, int size)
 	int result1 = 0;
 	int result2 = 0;
 
-	for (int index = 0; index < size; index++)
+	for (int index = 0; index < size * size; index += size + 1)
 	{
-		result1 += a[index * size + index];
-		result2 += a[(index + 1) * size - (index + 1)];
+		result1 += a[index];
+	}
+
+	for (index = size - 1; index < size * size - 1; index += size - 1)
+	{
+		result2 += a[index];
 	}
 
 	printf("The Sum of main diagonal is: %d\n", result1);
