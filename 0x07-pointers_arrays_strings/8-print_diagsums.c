@@ -21,4 +21,6 @@ void print_diagsums(int *a, int size)
 
 	printf("The Sum of main diagonal is: %d\n", result1);
 	printf("The Sum of other diagonal is: %d\n", result2);
+
+	return ('\0');
 }
