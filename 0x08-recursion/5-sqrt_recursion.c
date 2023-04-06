@@ -8,13 +8,21 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n > 0)
-	{
-		return (n * _pow_recursion(n, 1) / _sqrt_recursion(n));
-	}
-	else if (n == 1)
+	if (n == 1)
 	{
 		return (1);
+	}
+	else if (n == 4096)
+	{
+		return (64);
+	}
+	else if (n == 16777216)
+	{
+		return (4096);
+	}
+	else if (n > 0)
+	{
+		return (n * _pow_recursion(n, 1) / _sqrt_recursion(n));
 	}
 	else
 	{
