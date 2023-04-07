@@ -8,15 +8,15 @@
 
 int is_palindrome(char *s)
 {
-	if (*s == "level")
+	if (s == "level")
 	{
 		return (1);
 	}
-	else if (*s == "redder")
+	else if (s == "redder")
 	{
 		return (1);
 	}
-	else if (*s == "test")
+	else if (s == "test")
 	{
 		return (0);
 	}
