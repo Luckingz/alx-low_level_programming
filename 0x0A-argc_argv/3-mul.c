@@ -10,13 +10,33 @@
 
 int main(int argc, char *argv[])
 {
-	int result;
-	(void) argc;
+	int result = 0;
 
-	if (argv[2] > 0 && argv[3])
+	if (argc >= 3)
 	{
-		result = *argv[2] * *argv[3];
-		printf("%d", result);
+		int arg1 = atoi(argv[1]);
+		int arg2 = atoi(argv[2]);
+
+		if (arg1 > 0 && arg2 > 0)
+		{
+			result = arg1 * arg2;
+			printf("%d\n", result);
+		}
+		else if (arg1 < 0 || arg2 < 0)
+		{
+			result = arg1 * arg2;
+			printf("%d\n", result);
+		}
+		else if (arg1 == 0 || arg2 == 0)
+		{
+			result = arg1 * arg2;
+			printf("%d\n", result);
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
 	else
 	{
