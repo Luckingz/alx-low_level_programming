@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	int result = 0;
 	int i = 0;
 
-	if (argc > 1)
+	if (argc >= 1)
 	{
 		for (; i < argc; i++)
 		{
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", result);
 	}
-	else if (argc < 1)
+	else if (argc < 0)
 	{
 		printf("0\n");
 	}
