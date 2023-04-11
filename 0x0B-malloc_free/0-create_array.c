@@ -26,10 +26,12 @@ char *create_array(unsigned int size, char c)
 		{
 			ch[index] = c;
 		}
+		free(ch);
 		return (ch);
 		}
 		else
 		{
+			free(ch);
 			return ('\0');
 		}
 	}
