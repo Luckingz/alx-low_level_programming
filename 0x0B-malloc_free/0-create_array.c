@@ -30,7 +30,7 @@ char *create_array(unsigned int size, char c)
 		}
 		else
 		{
-			return ('\0');
+			return (1);
 		}
 	}
 	free(ch);
