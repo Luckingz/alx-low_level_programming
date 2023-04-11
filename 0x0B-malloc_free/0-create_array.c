@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		if (c != '\0')
+		if (c != '\0' || c == '\0')
 		{
 			for (index = 0; index < size; index++)
 		{
