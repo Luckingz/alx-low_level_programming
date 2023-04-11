@@ -18,13 +18,9 @@ char *create_array(unsigned int size, char c)
 	{
 		return ('\0');
 	}
-	else
-	{
-		for (index = 0; index < size; index++)
+	for (index = 0; index < size; index++)
 		{
 			ch[index] = c;
 		}
-		return (ch);
-	}
 	return (ch);
 }
