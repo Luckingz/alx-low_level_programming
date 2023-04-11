@@ -26,7 +26,7 @@ char *create_array(unsigned int size, char c)
 		{
 			ch[index] = c;
 		}
-		return (1);
+		return (ch);
 		}
 		else
 		{
