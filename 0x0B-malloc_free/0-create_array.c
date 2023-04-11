@@ -34,5 +34,5 @@ char *create_array(unsigned int size, char c)
 		}
 	}
 	free(ch);
-	return (0);
+	return ('\0');
 }
