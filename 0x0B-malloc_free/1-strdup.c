@@ -18,9 +18,9 @@ char *_strdup(char *str)
 		ch = str;
 		return (ch);
 	}
-	else if (*str == '\0')
+	else if (*str == NULL)
 	{
-		return ('\0');
+		return (NULL);
 	}
 	return (0);
 }
