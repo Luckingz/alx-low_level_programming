@@ -18,6 +18,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return ('\0');
 	}
+	else if (ch == '\0')
+	{
+		return ('\0');
+	}
 	else
 	{
 		if (c != '\0' || c == '\0')
