@@ -26,7 +26,7 @@ char *_strdup(char *str)
 	}
 	else if (*str == '\0')
 	{
-		return ('NULL');
+		return (NULL);
 	}
 	else
 	{
