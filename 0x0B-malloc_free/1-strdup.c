@@ -28,6 +28,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	else if (str == "")
+	{
+		return ("");
 	else
 	{
 		return (NULL);
