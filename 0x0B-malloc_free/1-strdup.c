@@ -24,7 +24,7 @@ char *_strdup(char *str)
 		_strcpy(ch, str);
 		return (ch);
 	}
-	else if (*str[0] == '\0')
+	else if (str[0] == '\0')
 	{
 		return ("");
 	}
