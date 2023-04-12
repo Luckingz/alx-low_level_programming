@@ -28,6 +28,10 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
+	else if (*str == '')
+	{
+		return ('');
+	}
 	else
 	{
 		return (NULL);
