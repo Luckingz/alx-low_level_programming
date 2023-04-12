@@ -12,10 +12,6 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ch = malloc(size * sizeof(char));
-
-	if (ch == '\0')
-		return ('\0');
-
 	unsigned int index;
 
 	if (size == 0)
