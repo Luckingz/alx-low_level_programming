@@ -31,11 +31,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	else if (*s2 != '\0' || s1 != NULL || s2 != NULL)
 	{
-		result = _strcat(s1, s2);
-
-		rex = _strcpy(ch, result);
-
-		return (rex);
+		_strcpy(ch, s1);
+		_strcat(ch, s2);
+		return (ch);
 	}
 	else
 	{
