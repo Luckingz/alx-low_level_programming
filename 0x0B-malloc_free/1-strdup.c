@@ -13,12 +13,12 @@ char *_strdup(char *str)
 {
 	char *ch = malloc(sizeof(*str));
 
-	if (*str != '\0')
+	if (str != '\0')
 	{
 		ch = str;
 		return (ch);
 	}
-	else if (*str == '\0')
+	else if (str == '\0')
 	{
 		return ('\0');
 	}
