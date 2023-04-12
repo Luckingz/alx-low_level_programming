@@ -26,11 +26,11 @@ char *_strdup(char *str)
 	}
 	else if (*str == '\0')
 	{
-		return ('\0');
+		return ('NULL');
 	}
 	else
 	{
-		return ('\0');
+		return (NULL);
 	}
 	free(ch);
 	return (0);
