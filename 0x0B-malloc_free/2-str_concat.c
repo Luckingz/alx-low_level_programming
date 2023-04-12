@@ -12,8 +12,9 @@
 char *str_concat(char *s1, char *s2)
 {
 	int len1, len2;
-	char result;
-	char rex;
+	char *result;
+	char *rex;
+	char *ch;
 
 	if (s2 == NULL)
 	{
@@ -22,7 +23,7 @@ char *str_concat(char *s1, char *s2)
 
 	len1 = _strlen(s2);
 	len2 = _strlen(s1);
-	char *ch = malloc((len1 + len2 + 1) * sizeof(char));
+	ch = malloc((len1 + len2 + 1) * sizeof(char));
 
 	if (ch == NULL)
 	{
@@ -30,9 +31,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	else if (*s2 != '\0' || s1 != NULL || s2 != NULL)
 	{
-		*result = _strcat(s1, s2);
+		result = _strcat(s1, s2);
 
-		*rex = _strcpy(ch, result);
+		rex = _strcpy(ch, result);
 
 		return (rex);
 	}
