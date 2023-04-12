@@ -20,7 +20,7 @@ char *_strdup(char *str)
 		_strcpy(ch, str);
 		return (ch);
 	}
-	else if (ch == NULL)
+	else if (ch == NULL || *str == NULL)
 	{
 		return (NULL);
 	}
