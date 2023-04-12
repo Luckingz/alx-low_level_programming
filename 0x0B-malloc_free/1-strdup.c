@@ -19,12 +19,12 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	else if (*str != '\0')
+	else if (str != '\0')
 	{
 		_strcpy(ch, str);
 		return (ch);
 	}
-	else if (*str == '\0')
+	else if (str == '\0')
 	{
 		return ('\0');
 	}
