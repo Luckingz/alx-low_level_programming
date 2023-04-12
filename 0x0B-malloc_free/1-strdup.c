@@ -13,10 +13,9 @@ char *_strdup(char *str)
 {
 	char *ch = malloc(sizeof(*str));
 
-	strcpy(ch, *str);
-
 	if (*str != '\0')
 	{
+		ch = *str;
 		return (ch);
 	}
 	else if (*str == '\0')
