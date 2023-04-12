@@ -18,9 +18,10 @@ char *_strdup(char *str)
 		ch = str;
 		return (ch);
 	}
-	else if (*str == NULL)
+	else if (*str == '\0')
 	{
-		return (NULL);
+		return ('\0');
 	}
+	free(ch);
 	return (0);
 }
