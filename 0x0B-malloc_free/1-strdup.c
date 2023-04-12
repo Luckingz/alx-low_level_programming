@@ -17,7 +17,7 @@ char *_strdup(char *str)
 
 	if (*str != '\0')
 	{
-		ch = str;
+		_strcpy(ch, str);
 		return (ch);
 	}
 	else if (ch == NULL)
@@ -46,4 +46,23 @@ int _strlen(char *s)
 		s++;
 	}
 	return (len);
+}
+
+/**
+ * _strcpy - Function to copy a string
+ * @dest: Destination variable
+ * @src: Source variable
+ * Return: 0 always
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	char *result = dest;
+
+	while (*src != '\0')
+	{
+		*dest++ = *src++;
+	}
+	*dest = '\0';
+	return (result);
 }
