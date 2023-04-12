@@ -59,10 +59,11 @@ char *_strcpy(char *dest, char *src)
 {
 	char *result = dest;
 
-	if (*src == "")
+	if (*src == '\0')
 	{
-		return ("");
+		return ('\0');
 	}
+
 	while (*src != '\0')
 	{
 		*dest++ = *src++;
