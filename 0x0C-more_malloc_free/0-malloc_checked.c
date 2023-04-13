@@ -10,23 +10,18 @@
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int len = sizeof(b);
-	unsigned int *mem = malloc(len * sizeof(int));
+	void *mem = malloc(b);
 
 	if (mem == NULL)
 	{
 		exit(98);
 	}
-	else if (mem != NULL)
+	else
 	{
 		return (mem);
 	}
-	else
-	{
-		exit(98);
-	}
 	free(mem);
-	return (0);
+	return (mem);
 }
 
 /**
