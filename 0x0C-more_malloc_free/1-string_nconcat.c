@@ -25,13 +25,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		result = _strncat(s1, s2, n);
-		_strcpy(ch, result);
+		result = _strncat(ch, s1, len1);
+		result = _strncat(ch + len1, s2, n);
 		free(result);
 		return (ch);
 	}
 	free(ch);
-	return (0);
+	return (NULL);
 }
 
 /**
