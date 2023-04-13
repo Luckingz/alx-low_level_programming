@@ -10,8 +10,8 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int len = sizeof(b);
-	int *mem = malloc(len * sizeof(int));
+	unsigned int len = sizeof(b);
+	unsigned int *mem = malloc(len * sizeof(int));
 
 	if (mem == NULL)
 	{
