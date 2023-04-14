@@ -15,13 +15,17 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i = 0;
 	void *result;
 
-	if (num1 == NULL || nnemb == 0 || size == 0)
+	if (num1 == NULL)
+	{
+		return (NULL);
+	}
+	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 
-	for (; i < nmemb; i++;)
-		*((char *)num1 + i) = 0;
-	return (num1);
+	for (; i < size; i++)
+	{
+		nmemb[i] = num[i];
 	}
 }
