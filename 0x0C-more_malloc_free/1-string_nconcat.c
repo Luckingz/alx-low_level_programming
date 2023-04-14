@@ -12,37 +12,39 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len1, len2;
-	char *ch;
-
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
-
-	len1 = _strlen(s1);
-	len2 = _strlen(s2);
-
-	ch = malloc((len1 + n + 1) * sizeof(char));
+	unsigned int len1 = 0, len2 = 0, i, j;
+	char *ch = malloc(len1 + n + 1);
 
 	if (ch == NULL)
 	{
 		return (NULL);
 	}
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
+
 	if (n >= len2)
 	{
-		_strncat(ch, s2, len2);
+		n = len2;
 	}
-	else
+
+	for (i = 0; i < len1; i++)
 	{
-		_strncat(ch, s1, len1);
-		_strncat(ch + len1, s2, n);
+		ch[i] = s1[i];
 	}
+
+	for (j = 0; j < n; j++)
+	{
+		ch[i + j] = s2[j];
+	}
+
+	ch[i + j] = '\0';
+
 	return (ch);
 }
 
@@ -75,25 +77,6 @@ char *_strncat(char *dest, char *src, int n)
 }
 
 /**
- * _strcpy - Function that copies a string to another
- * @dest: Destination variable
- * @src: Source variable
- * Return: 0 always
- */
-
-char *_strcpy(char *dest, char *src)
-{
-	char *result = dest;
-
-	while (*src != '\0')
-	{
-		*dest++ = *src++;
-	}
-	*dest = '\0';
-	return (result);
-}
-
-/**
  * _strlen - A Fucntion that retuns the length
  * of a string
  * @s: Variable to be returned
@@ -102,12 +85,9 @@ char *_strcpy(char *dest, char *src)
 
 int _strlen(char *s)
 {
-	int len = 0;
+	unsigned int len;
 
-	while (*s != '\0')
-	{
-		len++;
-		s++;
-	}
+	for (len = 0; s[len] != '\0'; len++)
+		;
 	return (len);
 }
