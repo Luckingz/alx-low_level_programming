@@ -20,10 +20,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	while (i < nmemb)
-	{
-		result = *((char *)num1 + i);
-	}
+	for (; i < nmemb; i++;)
+		*((char *)num1 + i) = 0;
 	return (num1);
 	}
 }
