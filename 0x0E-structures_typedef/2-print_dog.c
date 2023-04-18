@@ -15,6 +15,6 @@ void print_dog(struct dog *d)
 		return;
 	}
 	printf("%s\n", d->name ? d->name : "(nil)");
-	printf("%f\n", d->age ? d->age : "(nil)");
+	printf("%f\n", d->age ? d->age : 0.0);
 	printf("%s\n", d->owner ? d->owner : "(nil)");
 }
