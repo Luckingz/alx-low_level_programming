@@ -18,6 +18,6 @@ struct Dog
 	char *owner;
 };
 
-typedef Dog dog;
+struct Dog dog;
 
 #endif
