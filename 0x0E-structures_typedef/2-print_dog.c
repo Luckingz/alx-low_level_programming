@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_dog - Function to initialize variable of type struct dog
@@ -11,13 +12,14 @@ void print_dog(struct dog *d)
 {
 	if (d->name == NULL || d->age == NULL || d->owner)
 	{
-		return ("nil");
+		printf("nil\n");
+		return;
 	}
 	if (d->name == NULL)
 	{
-		return ('\0');
+		return;
 	}
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+	printf("%s\n", d->name);
+	printf("%s\n", d->age);
+	printf("%s\n", d->owner);
 }
