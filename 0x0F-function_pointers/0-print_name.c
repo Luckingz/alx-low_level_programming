@@ -12,7 +12,7 @@
 void print_name(char *name, void (*f)(char *))
 {
 	_putchar(*name);
-	if (f != NULL)
+	if (f != '\0')
 	{
 		f(name);
 	}
