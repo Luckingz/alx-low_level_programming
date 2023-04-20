@@ -11,7 +11,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	name = &void (*f)(char *);
 	int index = 0;
 
 	while (*name != '\0')
@@ -19,5 +18,7 @@ void print_name(char *name, void (*f)(char *))
 		_putchar(name[index])
 			index++;
 	}
+	char q = name;
+	f = &q;
 	return (0);
 }
