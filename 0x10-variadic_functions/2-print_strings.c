@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-#include <ctype.h>
+#include <stdlib.h>
 #include <string.h>
 
 /**
@@ -10,21 +10,29 @@
  * @n: Counter
  */
 
-void print_strings(const char *separator, cons unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
+	const char *ch;
+	unsigned int i;
 
 	va_start(ap, n);
 
-	for (unsigned int i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
-		if (!isdigit(*va_arg(ap, char*)))
+		ch = va_arg(ap, const char *);
+
+		if (ch == NULL)
 		{
-			printf("%s", va_arg(ap, char*));
+			printf("(nil)");
 		}
-		if (i < n - 1 && separator != NULL)
+		else
 		{
+			printf("%s", ch);
 			printf("%s", separator);
+			printf(" ");
 		}
 	}
+		printf("\n");
+		va_end(ap);
 }
