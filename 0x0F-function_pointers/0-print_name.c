@@ -12,6 +12,9 @@
 void print_name(char *name, void (*f)(char *))
 {
 	_putchar(name);
-	f = &print_name;
+	if (f != NULL)
+	{
+		f(name);
+	}
 	return (0);
 }
